@@ -6,6 +6,7 @@ import {
   ScanText, ServerCog, Sparkles, Sun, X, Zap
 } from "lucide-react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import ChatWidget from "./components/chatbot/ChatWidget";
 import "./styles.css";
 
 const oldProjects = [
@@ -459,6 +460,7 @@ function App() {
       </main>
 
       <footer><span>© {new Date().getFullYear()} Mohan Akash</span><span>AI · RAG · OCR · Azure · Backend</span></footer>
+      <ChatWidget />
     </div>
   );
 }
